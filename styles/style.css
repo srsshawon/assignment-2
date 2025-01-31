@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar style */
+.navbar{
+    width: 100%;
+    max-height: 95px;
+    padding: 18px 0;
+}
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 174px;
+}
+.nav-logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-title{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.a1{
+    color: rgb(254, 163, 1);
+}
+.a2{
+    color: rgb(1, 172, 253);
+}
+.a3{
+    color: rgb(5, 212, 223);
+}
+.a4{
+    color: rgb(93, 88, 239);
+}
+
+.btn-primary{
+    border: none;
+    border-radius: 10px;
+    background: rgb(254, 163, 1);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 166px;
+}
+
+/* responsive design for navbar */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
+    }
+    .nav-content{
+        display: flex;
+
+    }
+    .nav-logo h3{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+}
