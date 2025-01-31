@@ -95,3 +95,63 @@ body{
         display: none;
     }
 }
+
+/* banner section style */
+.banner{
+    
+    margin: 0 131px;
+    display:flex;
+    gap: 47px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
+    
+}
+
+.banner-title{
+    font-family: Quicksand;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.c1{
+    color: rgba(254, 163, 1, 1);
+}
+.c2{
+    color: rgba(1, 172, 253, 1);
+}
+.banner-description{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1.1rempx;
+    font-weight: 400;
+}
+.banner-btn{
+    width: 167px;
+    border: none;
+    border-radius: 11px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 22px;
+}
+
+/* responsive design for banner */
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-description{
+        font-size: 0.9rem;
+    }
+}
