@@ -104,7 +104,6 @@ body{
     gap: 47px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 56px;
     
 }
 
@@ -153,5 +152,128 @@ body{
     }
     .banner-description{
         font-size: 0.9rem;
+    }
+}
+
+
+/* card section Style */
+
+.cards{
+    background: url(../assets/bg.png);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 56px 130px 56px 130px;
+}
+
+.cards-heading{
+    margin-bottom: 75px;
+    font-size: 2.7rem;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-weight: 700;
+}
+
+.card-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    padding: 56px 37px;
+    width: 344px;
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+.card-title{
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.card-description{
+    color: rgb(128, 128, 128);
+    font-family: Quicksand;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.card-btn{
+    color: rgb(100, 200, 255);
+    font-family: Quicksand;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    background: none;
+}
+.btn1{
+    color: #64C8FF;
+}
+.btn2{
+    color: #F0AA00;
+}
+.btn3{
+    color: #8700FF
+}
+.card-first{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 17px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    
+}
+.card-second{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 17px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-third{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 17px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.slide-btn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.slide{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-family: Font Awesome 5 Free;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: center;
+}
+/* responsive style for card section */
+
+@media screen and (max-width: 576px) {
+    .cards, .card-area{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .slide-btn{
+        display: none;
+    }
+    .cards-heading{
+        font-size: 1.5rem;
     }
 }
