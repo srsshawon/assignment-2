@@ -411,3 +411,110 @@ body{
     
 
 }
+
+/* footer section style */
+.footer{
+    background-color: rgb(1, 172, 253);;
+    padding: 0 131px;
+    padding-top: 115px;
+    padding-bottom: 163px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+    
+}
+.footer-content{
+    margin-top: -30px;
+}
+
+.footer-logo-title{
+    display: flex;
+    gap: 10px;
+    margin-bottom: -35px;
+}
+.footer-heading{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.footer-logo{
+    width: 77px;
+    height: 76px;
+    margin-top: 50px;
+    
+}
+.footer-description{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.footer-menu{
+    margin-left: 50px;
+    text-align: center;
+}
+.footer-menu ul li{
+    list-style: none;
+    text-align: left;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 50px;
+    }
+.menu-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.link-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* footer responsive style */
+@media screen and (max-width: 576px) {
+    .footer{
+        text-align: left;
+        
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        margin-right: 100px;
+        width: 90%;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        margin-left: -80px;
+    }
+    .footer-menu ul{
+        margin-left: -30px;
+    }
+    .footer-link{
+        margin-left: -80px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: -80px;
+    }
+}
